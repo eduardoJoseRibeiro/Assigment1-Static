@@ -30,7 +30,10 @@ p {
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
-    top: 40%;
+    top: 5%;
+  }
+  .parallax-container {
+    min-height: 80vh;
   }
   #index-banner .section {
     top: 10%;
@@ -78,3 +81,10 @@ footer.page-footer {
   }
 }
 
+.social-icons {
+  width: 60px;
+}
+
+.inline {
+  display: inline-block;
+}

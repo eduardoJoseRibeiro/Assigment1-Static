@@ -19,16 +19,33 @@
     <header>
         <nav class="white" role="navigation">
             <div class="nav-wrapper container">
-                <a id="logo-container" href="#" class="brand-logo">Logo</a>
+                <a id="logo-container" href="/" class="brand-logo">
+                    {% load staticfiles %}
+                    <img src="{% static "img/novo-logo.png" %}" 
+                        alt="Logo empresa GIRA, Gestão Integrada de Recebiveis do Agronegócio"
+                        style="width: 105px"/>
+                </a>
                 <ul class="right hide-on-med-and-down">
                     <li>
-                        <a href="#">Navbar Link</a>
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#">Preços</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Entrar</a>
                     </li>
                 </ul>
         
                 <ul id="nav-mobile" class="sidenav">
-                    <li>
-                        <a href="#">Navbar Link</a>
+                    <li class="active">
+                        <a href="#">ENTRAR</a>
                     </li>
                 </ul>
                 <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>

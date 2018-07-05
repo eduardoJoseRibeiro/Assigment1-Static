@@ -1,6 +1,6 @@
 nav ul a,
 nav .brand-logo {
-  color: #444;
+  color: $secondary;
 }
 
 p {
@@ -8,18 +8,24 @@ p {
 }
 
 .sidenav-trigger {
-  color: #26a69a;
+  color: $primary;
 }
 
 .parallax-container {
   min-height: 380px;
+  width: 100%;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+
+.parallax-container .section {
+  width: 100%;
+}
+
+.brand-logo {
+  margin-top: 5px;
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -28,6 +34,9 @@ p {
   }
   #index-banner .section {
     top: 10%;
+  }
+  .brand-logo {
+    margin-top: 0;
   }
 }
 
@@ -47,3 +56,25 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+.active {
+  background-color: $primary!important;
+  & a {
+    color: white!important;
+  }
+}
+.nav-wrapper ul li { 
+  & a:hover {
+    line-height: 2rem;
+    padding: 15px 0 0 0;
+    margin-right: 15px;
+    margin-left: 15px; 
+    background-color: transparent!important; 
+    border-bottom: 3px solid $primary;
+    transition: .3s;
+  }
+  & a {
+    text-transform: uppercase;
+  }
+}
+

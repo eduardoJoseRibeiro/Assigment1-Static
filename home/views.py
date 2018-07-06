@@ -21,7 +21,14 @@ def contato(request):
 
 def servicos(request):
     context = {
-        'page_name' : 'Serviços -',
+        'page_name' : 'Conheça nossos Planos -',
         'year' : dt.year
     }
     return render(request, 'servicos.html', context)
+
+def sobre(request):
+    context = {
+        'page_name' : 'Saiba mais sobre nós -',
+        'year' : dt.year
+    }
+    return render(request, 'sobre.html', context)

@@ -1,0 +1,34 @@
+.planos {
+    margin-top: 20px;
+    border-radius: 3px;
+    padding-top: 30px!important;
+    padding-bottom: 30px!important;
+}
+
+.planos-titulo {
+    @media screen and (max-width: 900px){
+        margin-top: 20vh;   
+    }
+}
+
+.planos-destaque {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.planos-header {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid white;
+}
+
+.planos-body {
+    padding-left: 30px;
+
+    & ul li {
+        font-size: 1.3rem;
+        & i {
+            font-size: 1.1rem;
+        }
+    }
+}

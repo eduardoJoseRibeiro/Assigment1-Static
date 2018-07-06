@@ -29,7 +29,10 @@
                 </a>
                 <ul class="right hide-on-med-and-down">
                     <li>
-                        <a href="#">Sobre</a>
+                        <a href="{% url 'sobre' %}">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#">Clientes</a>
                     </li>
                     <li>
                         <a href="{% url 'servicos' %}">Serviços</a>
@@ -47,8 +50,11 @@
         
                 <ul id="nav-mobile" class="sidenav">
                     <li>
-                        <a href="#">Sobre</a>
-                    </li>        
+                        <a href="{% url 'sobre' %}">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#">Clientes</a>
+                    </li>
                     <li>
                         <a href="{% url 'servicos' %}">Serviços</a>
                     </li>
@@ -74,14 +80,14 @@
     <footer class="page-footer teal">
         <div class="container">
             <div class="row">
-            <div class="col l6 s12">
+            <div class="col l12 s12 center">
                 <h5 class="white-text">GIRA</h5>
                 <p class="grey-text text-lighten-4">
                     O GIRA é um sistema ultra moderno de gestão dos recebíveis no Agronegócio. Ele funciona por meio de um aplicativo Web e no seu celular e utiliza um novo tipo de CPR. A CPR GIRA  tem, além do compromisso de entrega de grãos, um verdadeiro compromisso de produtividade, no qual vistorias presenciais dão total credibilidade à informação durante a fase vegetativa o que possibilita uma resposta do time jurídico em momento mais adequando para garantir a recuperação do crédito.
                 </p>
     
             </div>
-            <div class="col l6 s12">
+            <div class="col l12 s12 center">
                 <h5 class="white-text">Conecte-se conosco</h5>
                 <ul>
                     <li class="inline">

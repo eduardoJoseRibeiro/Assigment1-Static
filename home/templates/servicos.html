@@ -2,4 +2,75 @@
 
 {% block content %}
 
+<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot ">
+        <div class="container">
+            <div class="row center">
+                <h1 class="header col s12 light planos-titulo">
+                    Conheça nossos Planos
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="parallax">
+        {% load staticfiles %}
+        <img src="{% static "img/servicos.jpg" %}" alt="Unsplashed background img 3">
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="planos col s12 m5  offset-m1 secondary white-text">
+            <div class="planos-header">
+                <h5 class="center planos-destaque"><b>Gira Basic</b></h5>
+                <h1 class="center planos-destaque">
+                    <small>R$</small>1000
+                </h1>
+                <h6 class="center planos-destaque">Por TCR emitida</h6>
+            </div>
+            <div class="planos-body">
+                <ul>
+                    <li>
+                        <i class="material-icons">check</i> Análise Jurídica
+                    </li>
+                    <li>
+                        <i class="material-icons">check</i> Análise Agronômica
+                    </li>
+                    <li>
+                        <i class="material-icons">check</i> Geração da TCR
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="planos col s12 m5 offset-m1 primary white-text">
+            <div class="planos-header">
+                <h5 class="center planos-destaque"><b>Gira Plus</b></h5>
+                <h1 class="center planos-destaque"> 
+                    <small>R$</small>2000
+                </h1>
+                <h6 class="center planos-destaque">Por TCR emitida</h6>
+            </div>
+            <div class="planos-body">
+                <ul>
+                    <li>
+                        <i class="material-icons">check</i> Análise Jurídica
+                    </li>
+                    <li>
+                        <i class="material-icons">check</i> Análise Agronômica
+                    </li>
+                    <li>
+                        <i class="material-icons">check</i> Geração da TCR
+                    </li>
+                    <li>
+                        <i class="material-icons">check</i> App para Elaboração do CROQUI
+                    </li>
+                    <li>
+                        <i class="material-icons">check</i> Atendimento Personalizado
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock content %}

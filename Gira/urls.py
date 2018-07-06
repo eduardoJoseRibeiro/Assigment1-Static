@@ -7,4 +7,5 @@ urlpatterns = [
     url(r'^$', home, name='home'),
     url(r'^contato$', contato, name='contato'),
     url(r'^servicos$', servicos, name='servicos'),
+    url(r'^sobre$', sobre, name='sobre'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

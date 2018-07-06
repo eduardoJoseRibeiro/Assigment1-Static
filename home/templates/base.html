@@ -29,19 +29,16 @@
                 </a>
                 <ul class="right hide-on-med-and-down">
                     <li>
-                        <a href="{% url 'sobre' %}">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="#">Clientes</a>
-                    </li>
-                    <li>
-                        <a href="{% url 'servicos' %}">Serviços</a>
-                    </li>
-                    <li>
                         <a href="{% url 'contato' %}">Contato</a>
                     </li>
                     <li>
-                        <a href="{% url 'home' %}">Home</a>
+                        <a href="{% url 'planos' %}">Planos</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'sobre' %}">Vantagens</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'home' %}" class="link-ativo">Home</a>
                     </li>
                     <li class="active">
                         <a href="https://giraapp.com.br/app2/index.html#/login/index/gira1.x">Entrar</a>
@@ -50,16 +47,13 @@
         
                 <ul id="nav-mobile" class="sidenav">
                     <li>
-                        <a href="{% url 'sobre' %}">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="#">Clientes</a>
-                    </li>
-                    <li>
-                        <a href="{% url 'servicos' %}">Serviços</a>
-                    </li>
-                    <li>
                         <a href="{% url 'contato' %}">Contato</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'planos' %}">Planos</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'sobre' %}">Vantagens</a>
                     </li>
                     <li>
                         <a href="{% url 'home' %}">Home</a>
@@ -80,42 +74,69 @@
     <footer class="page-footer teal">
         <div class="container">
             <div class="row">
-            <div class="col l12 s12 center">
-                <h5 class="white-text">GIRA</h5>
-                <p class="grey-text text-lighten-4">
-                    O GIRA é um sistema ultra moderno de gestão dos recebíveis no Agronegócio. Ele funciona por meio de um aplicativo Web e no seu celular e utiliza um novo tipo de CPR. A CPR GIRA  tem, além do compromisso de entrega de grãos, um verdadeiro compromisso de produtividade, no qual vistorias presenciais dão total credibilidade à informação durante a fase vegetativa o que possibilita uma resposta do time jurídico em momento mais adequando para garantir a recuperação do crédito.
-                </p>
-    
-            </div>
-            <div class="col l12 s12 center">
-                <h5 class="white-text">Conecte-se conosco</h5>
-                <ul>
-                    <li class="inline">
-                        <a class="white-text" target="_blank" href="https://www.facebook.com/cprgira">
-                            {% load staticfiles %}
-                            <img src="{% static "img/facebook-fundo-branco.png" %}" alt="Facebook Gira" class="social-icons">
-                        </a>
-                    </li>
-                    <li class="inline">
-                        <a class="white-text" target="_blank" href="#!">
-                            {% load staticfiles %}
-                            <img src="{% static "img/youtube-fundo-branco.png" %}" alt="YouTube Gira" class="social-icons">
-                        </a>
-                    </li>
-                    <li class="inline">
-                        <a class="white-text" target="_blank" href="https://api.whatsapp.com/send?phone=5534997912261&text=Ol%C3%A1%20Eduardo,%20tudo%20bem?">
-                            {% load staticfiles %}
-                            <img src="{% static "img/whatsapp-fundo-branco.png" %}" alt="Whatsapp Gira" class="social-icons">
-                        </a>
-                    </li>
-                    <li class="inline">
-                        <a class="white-text" target="_blank" href="tel:3233-5626">
-                            {% load staticfiles %}
-                            <img src="{% static "img/telefone-fundo-branco.png" %}" alt="Telefone Gira" class="social-icons">
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                <div class="col l12 s12 center">
+                    <h5 class="white-text">GIRA</h5>
+                    <p class="grey-text text-lighten-4">
+                        O GIRA é um sistema ultra moderno de gestão dos recebíveis no Agronegócio. Ele funciona por meio de um aplicativo Web e no seu celular e utiliza um novo tipo de CPR. A CPR GIRA  tem, além do compromisso de entrega de grãos, um verdadeiro compromisso de produtividade, no qual vistorias presenciais dão total credibilidade à informação durante a fase vegetativa o que possibilita uma resposta do time jurídico em momento mais adequando para garantir a recuperação do crédito.
+                    </p>
+        
+                </div>
+
+                <div class="col l12 s12 center">
+                    <h5 class="white-text">Você também pode baixar nosso App</h5>
+                    <ul>
+                        <li class="inline">
+                            <a class="white-text" target="_blank" href="https://play.google.com/store/apps/details?id=br.com.solution.gira">
+                                {% load staticfiles %}
+                                <img 
+                                    src="{% static "img/google-play.png" %}" 
+                                    alt="Baixe o Gira no Google Play" 
+                                    class="social-icons"
+                                    style="width: 200px;">
+                            </a>
+                        </li>
+                        <li class="inline">
+                            <a class="white-text" target="_blank" href="https://itunes.apple.com/br/app/gira-gest%C3%A3o-integrada-de-receb%C3%ADveis-do-agroneg%C3%B3cio/id1053160107?l=en&mt=8">
+                                {% load staticfiles %}
+                                <img 
+                                    src="{% static "img/Baixar-na-App-Store.png" %}" 
+                                    alt="Baixe o Gira na App Store" 
+                                    class="social-icons"
+                                    style="width: 200px">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col l12 s12 center">
+                    <h5 class="white-text">Conecte-se conosco</h5>
+                    <ul>
+                        <li class="inline">
+                            <a class="white-text" target="_blank" href="https://www.facebook.com/cprgira">
+                                {% load staticfiles %}
+                                <img src="{% static "img/facebook-fundo-branco.png" %}" alt="Facebook Gira" class="social-icons">
+                            </a>
+                        </li>
+                        <li class="inline">
+                            <a class="white-text" target="_blank" href="#!">
+                                {% load staticfiles %}
+                                <img src="{% static "img/youtube-fundo-branco.png" %}" alt="YouTube Gira" class="social-icons">
+                            </a>
+                        </li>
+                        <li class="inline">
+                            <a class="white-text" target="_blank" href="https://api.whatsapp.com/send?phone=5534997912261&text=Ol%C3%A1%20Eduardo,%20tudo%20bem?">
+                                {% load staticfiles %}
+                                <img src="{% static "img/whatsapp-fundo-branco.png" %}" alt="Whatsapp Gira" class="social-icons">
+                            </a>
+                        </li>
+                        <li class="inline">
+                            <a class="white-text" target="_blank" href="tel:3233-5626">
+                                {% load staticfiles %}
+                                <img src="{% static "img/telefone-fundo-branco.png" %}" alt="Telefone Gira" class="social-icons">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="footer-copyright">

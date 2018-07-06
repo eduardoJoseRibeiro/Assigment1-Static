@@ -17,7 +17,7 @@ p {
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,1);
-  background-color: rgba(0,0,0,.3)
+  background-color: rgba(0,0,0,.2)
 }
 
 .parallax-container .section {
@@ -106,7 +106,10 @@ li.active {
 }
 
 .primary {
-  background-color: $primary
+  background-color: $primary;
+  &:hover {
+    background-color:  lighten($primary, 5%)
+  }
 }
 
 .secondary {

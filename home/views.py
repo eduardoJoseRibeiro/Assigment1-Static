@@ -8,31 +8,27 @@ dt = date.today()
 def home(request):
     context = {
         'page_name' : 'Home -',
-        'year' : dt.year,
-        'link_ativo' : 'home'
+        'year' : dt.year
     }
     return render(request, 'index.html', context)
 
 def contato(request):
     context = {
         'page_name' : 'Contato -',
-        'year' : dt.year,
-        'link_ativo' : 'contato'
+        'year' : dt.year
     }
     return render(request, 'contato.html', context)
 
 def planos(request):
     context = {
         'page_name' : 'Conheça nossos Planos -',
-        'year' : dt.year,
-        'link_ativo' : 'planos'
+        'year' : dt.year
     }
     return render(request, 'planos.html', context)
 
 def sobre(request):
     context = {
         'page_name' : 'Saiba mais sobre nós -',
-        'year' : dt.year,
-        'link_ativo' : 'sobre'
+        'year' : dt.year
     }
     return render(request, 'sobre.html', context)

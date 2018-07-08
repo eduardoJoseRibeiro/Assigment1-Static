@@ -1,11 +1,8 @@
-from django.conf.urls import url
+from django.conf.urls import url, include
 from django.conf.urls.static import static
 from django.conf import settings
-from home.views import *
+from home import urls 
 
 urlpatterns = [
-    url(r'^$', home, name='home'),
-    url(r'^contato$', contato, name='contato'),
-    url(r'^planos$', planos, name='planos'),
-    url(r'^sobre$', sobre, name='sobre'),
+    url(r'^', include('home.urls', namespace="home"))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

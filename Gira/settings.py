@@ -124,4 +124,5 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 
+# IP added to Test locally on mobile 
 ALLOWED_HOSTS = ['192.168.1.126', 'localhost', '127.0.0.1']
